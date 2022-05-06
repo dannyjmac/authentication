@@ -1,6 +1,11 @@
 import express from "express";
 import cors from "cors";
 import { router } from "./routes";
+import mongoose from "mongoose";
+
+// mongoose.connect(
+//   `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.obak4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+// );
 
 const app = express();
 
